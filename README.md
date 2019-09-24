@@ -9,3 +9,6 @@
 ### MAIN HTML FILE
 - `ion-nav-bar` and `ion-nav-vew` Ionic components to automatically add
 - Only head and the body are in the index folder because MeteorJS takes care of the rest
+
+### MISC
+- Added angular-ecmascript to take advantage of es6's class system
