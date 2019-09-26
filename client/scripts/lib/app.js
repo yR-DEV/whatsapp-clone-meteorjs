@@ -11,6 +11,7 @@ import Loader from 'angular-ecmascript/module-loader';
 import { Meteor } from 'meteor/meteor';
 
 // Routes config
+import ChatsCtrl from '../controllers/chats.controller';
 import RoutesConfig from '../routes';
 
 // Modules to add
@@ -24,7 +25,8 @@ Angular.module(App, [
 
 // App loader
 new Loader(App)
-  .load(RoutesConfig);
+    .load(ChatsCtrl)
+    .load(RoutesConfig);
 
 // App startup
 if (Meteor.isCordova) {
